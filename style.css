@@ -1,0 +1,120 @@
+*,::after,
+::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* barlow-semi-condensed-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow Semi Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-semi-condensed-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* barlow-semi-condensed-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow Semi Condensed';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/barlow-semi-condensed-v15-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* barlow-semi-condensed-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow Semi Condensed';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/barlow-semi-condensed-v15-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+:root{
+    background-color:var(--white);
+    color: var(--white);
+    /* purple */
+    --Purple1: hsl(260, 100%, 95%);
+    --Purple2: hsl(264, 82%, 80%);
+    --Purple3: hsl(263, 55%, 52%);
+    /* comman */
+    --white:hsl(0, 0%, 100%);
+    --grey:hsl(214, 17%, 92%);
+    --grey1:hsl(0, 0%, 81%);
+    --grey2:hsl(224, 10%, 45%);
+    --jw:hsl(217, 19%, 35%);
+    --pa:hsl(219, 29%, 14%);
+    --black: hsl(0, 0%, 7%);
+    --shadow:30px 30px 40px var(--grey1);
+}
+body{
+    margin-top: 2.5%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.photo{
+    height: 35px;
+    border-radius: 50%;}
+.profile{
+    display: flex;
+    flex-direction: row;
+    font-size: 6px;
+    align-items: center;} 
+.head{
+    font-size: 11.5px;
+    margin-top: 1px;}
+.sub{
+    margin-top: -15px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    margin-left: 15px;
+    font-size: 10px;}
+.testimonial-box{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    border-radius: 14px;
+    font-family: 'Barlow Semi Condensed';}
+.box-1{
+    grid-area: box-1;
+    box-shadow: var(--shadow);
+    background-color: var(--Purple3);
+}
+.box-2{
+    grid-area: box-2;
+    box-shadow: var(--shadow);
+    background-color: var(--jw);  }
+.box-3{
+    color: var(--jw);
+    grid-area: box-3;
+    box-shadow: var(--shadow);
+    background-color: var(--white);  }
+.box-4{
+    grid-area: box-4;
+    box-shadow: var(--shadow);
+    background-color: var(--pa);  }
+.box-5{
+    color: var(--jw);
+    grid-area: box-5;
+    box-shadow: var(--shadow);
+    background-color: var(--white);  }
+.set{
+    display: grid;
+    width: 950px;
+    height: 540px;
+    grid-template-columns: 190px 230px 190px 190px;
+    grid-template-rows: 240px 230px;
+    column-gap: 23.5px;
+    row-gap: 15px;
+    grid-template-areas: 
+    "box-1 box-1 box-2 box-5"
+    "box-3 box-4 box-4 box-5";
+}
+.title{
+    font-size: 12px;}
+.description{
+    font-size: 11.8px;
+}
