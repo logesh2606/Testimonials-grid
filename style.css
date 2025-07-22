@@ -45,8 +45,9 @@
   --jw: hsl(217, 19%, 35%);
   --pa: hsl(219, 29%, 14%);
   --black: hsl(0, 0%, 7%);
-  --shadow: 30px 30px 40px var(--grey1);
+  --shadow: 30px 35px 30px var(--grey1);
   --shamb: 40px 50px 70px var(--grey1);
+  /* --shamb: 40px 50px 70px var(--grey1); */
 }
 body {
   margin-top: 2.5%;
@@ -100,8 +101,8 @@ body {
   width: 30px;
 }
 .photo {
-  width: 26px;
-  height: 25px;
+  width: 26.5px;
+  height: 25.5px;
   border-radius: 50%;
 }
 .profile {
@@ -120,7 +121,7 @@ body {
 .details {
   display: flex;
   flex-direction: column;
-  row-gap: 4px;
+  row-gap: 8px;
   margin-left: 15px;
   font-size: 10px;
 }
@@ -131,7 +132,6 @@ body {
   row-gap: 15px;
   border-radius: 14px;
   font-family: "Barlow Semi Condensed";
-  overflow: hidden;
   position: relative;
 }
 .box-1 {
@@ -182,7 +182,15 @@ body {
 .duco{
   position: absolute;
   top: 0px;
-  right: 30px;
+  right: 134px;
+}
+picture {
+  position: absolute;
+  mix-blend-mode: lighten;
+}
+img{
+  width: 93px;
+  height: 85.58px;
 }
 @media screen and (max-width: 811px) {
   .set {
@@ -196,6 +204,7 @@ body {
     grid-template-rows: repeat(5, auto);
     gap: 30px;
     padding: 44px;
+    padding-bottom: 2000px;
   }
   .title {
     font-size: 15.84px;
@@ -209,5 +218,9 @@ body {
   .box-4,
   .box-5 {
     box-shadow: var(--shamb);
+  }
+  img{
+    width: 0px;
+    height: 0px;
   }
 }
